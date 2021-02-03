@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/app/styles/style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+
+  <div id="spacingBox">
+    <div id="description">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div id="buttonForm">
+      <div id="promotion">
+        <span class="md-bold">Try it free 7 days </span><span>then $20/mo. thereafter</span>
+      </div>
+      <div id="form">
+        <form action="#">
+          <input type="text" placeholder="First Name">
+          <p class="inputErrorLabel errorHide">First Name cannot be empty</p>
+          <input type="text" placeholder="Last Name">
+          <p class="inputErrorLabel errorHide">Last Name cannot be empty</p>
+          <input type="email" placeholder="Email Address">
+          <p class="inputErrorLabel errorHide">Looks like this is not an email</p>
+          <input type="password" placeholder="Password">
+          <p class="inputErrorLabel errorHide">Password cannot be empty</p>
+          <input type="submit" id="submit" value="CLAIM YOUR FREE TRIAL">
+          <p class="tcGrey">By clicking the button, you are agreeing to our <span class="tcRed">Terms and Services</span></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/app/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>

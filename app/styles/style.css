@@ -1,0 +1,243 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ff7978;
+  background-image: url("/images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+body > div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0px 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 64rem) {
+  body > div {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 4.375rem 10rem;
+  }
+}
+
+#description {
+  padding: 2.5rem 0 0 0;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#description > h1 {
+  margin-top: 0px;
+  font-size: 1.3125rem;
+  font-weight: 700;
+  padding: 0rem 1.875rem;
+}
+
+@media screen and (min-width: 64rem) {
+  #description {
+    text-align: left;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 48%;
+    padding: 0px 6.25rem 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #description > h1 {
+    font-size: 3.125rem;
+    padding: 0px;
+  }
+  #description > p {
+    font-size: 1.125rem;
+  }
+}
+
+#buttonForm {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 64rem) {
+  #buttonForm {
+    width: 48%;
+  }
+}
+
+#promotion {
+  height: 5.652rem;
+  background-color: #5d54a3;
+  border-radius: 10px;
+  padding: 1.5625rem 5rem;
+  text-align: center;
+  -webkit-box-shadow: 0px 5px #de6667;
+          box-shadow: 0px 5px #de6667;
+  margin-bottom: 1.5625rem;
+}
+
+#form {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1.25rem;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px #d96661;
+          box-shadow: 0px 5px #d96661;
+}
+
+#form > form {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#form > form > input:not(:last-child) {
+  height: 3.4375rem;
+  border-radius: 10px;
+  border: 1px solid #dedede;
+  text-indent: 1.25rem;
+  color: #6d6d6f;
+  font-weight: 700;
+}
+
+#form > form > input:not(:last-child):focus {
+  outline: none;
+  border: 1px solid #605a80;
+}
+
+#form > form > input[type="submit"] {
+  height: 3.4375rem;
+  border-radius: 10px;
+  border: none;
+  text-indent: 0px;
+  background-color: #37cc8a;
+  color: white;
+  -webkit-box-shadow: 0px 5px #32b981;
+          box-shadow: 0px 5px #32b981;
+}
+
+#form > form > input[type="submit"]:active, #form > form > input[type="submit"]:hover {
+  background-color: #77e2b4;
+  cursor: pointer;
+}
+
+#form > form > input[type="submit"]:focus {
+  border: none;
+}
+
+.md-bold {
+  font-weight: 600;
+}
+
+.tcGrey {
+  text-align: center;
+  margin: 0px;
+  color: #afadb8;
+  font-size: 0.75rem;
+}
+
+.tcRed {
+  color: #ff8f90;
+}
+
+.inputError {
+  border: 2px solid #da838b !important;
+  background-image: url("/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: center;
+}
+
+.inputError::-webkit-input-placeholder {
+  color: #da838b;
+}
+
+.inputError:-ms-input-placeholder {
+  color: #da838b;
+}
+
+.inputError::-ms-input-placeholder {
+  color: #da838b;
+}
+
+.inputError::placeholder {
+  color: #da838b;
+}
+
+.inputErrorLabel {
+  color: #da838b;
+  margin: 0.625rem 0px;
+  text-align: right;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.errorHide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
